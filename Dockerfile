@@ -33,4 +33,4 @@ RUN cd /tmp \
 
 EXPOSE 5683/udp
 
-CMD  [ "server", "&" ]
+ENTRYPOINT [ "server" ]
