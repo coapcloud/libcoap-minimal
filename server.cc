@@ -23,7 +23,7 @@ main(void) {
   coap_startup();
 
   /* resolve destination address where server should be sent */
-  if (resolve_address("localhost", "5683", &dst) < 0) {
+  if (resolve_address("127.0.0.1", "5683", &dst) < 0) {
     coap_log(LOG_CRIT, "failed to resolve address\n");
     goto finish;
   }
